@@ -149,12 +149,13 @@ Your report must include a table or chart with data from an experiment to evalua
 Your project will be reviewed by a Udacity reviewer against the project rubric [here](https://review.udacity.com/#!/rubrics/1801/view). Review this rubric thoroughly, and self-evaluate your project before submission. All criteria found in the rubric must meet specifications for you to pass.
 
 
+
 ## Submission
+Before you can submit your project for review in the classroom, you must run the provided test suite and generate a zip archive of the required project files. Submit the archive in your classroom for review. 
 
-Before you can submit your project for review in the classroom, you must run the remote test suite & generate a zip archive of the required project files. Submit the archive in your classroom for review. (See notes on submissions below for more details.) From your terminal, run the command: (make sure to activate the aind conda environment if you're running the project in your local environment; workspace users do **not** need to activate an environment.)
+From your terminal, run the following command (make sure to activate the conda environment if you're running the project in your local environment; workspace users do not need to activate an environment.):
 ```
-$ udacity submit
+$ python -m unittest -v
 ```
-The script will automatically create a zip archive of the required files (`my_custom_player.py` and `report.pdf` are required; `data.pickle` will be included if it exists) and submit your code to a remote server for testing. You can only submit a zip archive created by the PA script (even if you're only submitting a partial solution), and you **must submit the exact zip file created by the Project Assistant** in your classroom for review. The classroom verifies the zip file submitted against records on the Project Assistant system; any changes in the file will cause your submission to be rejected.
+After confirming the tests run successfully, create a zip archive of the required files (my_custom_player.py and report.pdf are required; data.pickle will be included if it exists). Submit this zip archive in your classroom for review.
 
-**NOTE:** Students who authenticate with Facebook or Google accounts _must_ follow the instructions on the FAQ page [here](https://project-assistant.udacity.com/faq) to obtain an authentication token. (The Workspace already includes instructions for obtaining and configuring your token.)
